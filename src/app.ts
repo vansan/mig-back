@@ -34,5 +34,9 @@ export function createApp() {
     res.status(200).json({ status: 'OK' });
   });
 
+  app.get('/', (_req, res) => {
+    res.send('MyInterviewGenie API is perfectly running.');
+  });
+
   return app;
 }
