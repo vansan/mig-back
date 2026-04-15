@@ -30,5 +30,9 @@ export function createApp() {
     res.status(200).json({ status: 'OK' });
   });
 
+  app.get('/healthz', (_req, res) => {
+    res.status(200).json({ status: 'OK' });
+  });
+
   return app;
 }
