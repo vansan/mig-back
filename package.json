@@ -2,9 +2,10 @@
   "name": "licensing-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
     "test": "jest --runInBand --forceExit",
     "test:coverage": "jest --runInBand --forceExit --coverage",
